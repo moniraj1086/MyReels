@@ -1,9 +1,8 @@
-// MyReels Automated Public Video Stream Engine
+// MyReels Automated Public Video Stream Engine (Updated Active Feed)
 const videoPool = [
-    "https://googleapis.com",
-    "https://googleapis.com",
-    "https://googleapis.com",
-    "https://googleapis.com"
+    "https://zencdn.net",
+    "https://html5demos.com",
+    "https://w3.org"
 ];
 
 function loadAutomatedReels() {
@@ -11,7 +10,6 @@ function loadAutomatedReels() {
     const container = document.querySelector('.reels-container');
     if (!container) return;
     
-    // Auto-populating the feed with streaming video sources
     videoPool.forEach((videoUrl, index) => {
         const reel = document.createElement('div');
         reel.className = 'reel-viewport';
@@ -32,4 +30,3 @@ function loadAutomatedReels() {
 }
 
 document.addEventListener("DOMContentLoaded", loadAutomatedReels);
-
